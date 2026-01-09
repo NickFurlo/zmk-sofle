@@ -84,7 +84,7 @@ layers:
   - '&revit_placeswitch'
   - '&revit_placelight'
   - '&revit_placecomponent'
-  - '&mkp MB4'
+  - '&revit_spacetag'
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - PG UP
   - END
@@ -97,7 +97,7 @@ layers:
   - '&revit_line'
   - '&revit_move'
   - '&revit_copy'
-  - '&mkp MB5'
+  - '&revit_roomtag'
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - PG DN
   - $$mdi:arrow-left-bold$$
@@ -109,7 +109,7 @@ layers:
   - RGB OFF
   - RGB ON
   - RGB EFF
-  - RGB EFR
+  - '&revit_textbox'
   - RGB SPI
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - RGB BRI
@@ -122,7 +122,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: LAYER0, h: toggle}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
