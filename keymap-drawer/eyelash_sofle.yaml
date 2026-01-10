@@ -100,13 +100,13 @@ layers:
   - '&revit_roomtag'
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - PG DN
-  - $$mdi:arrow-left-bold$$
-  - $$mdi:arrow-down-bold$$
+  - RGB ON
+  - RGB OFF
   - $$mdi:arrow-right-bold$$
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - RGB OFF
+  - '&revit_3dcam'
+  - '&revit_revisioncloud'
   - RGB ON
   - $$mdi:arrow-up-bold$$
   - '&revit_textbox'
