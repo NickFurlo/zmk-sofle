@@ -107,7 +107,7 @@ layers:
   - {t: ']', s: '}'}
   - '&revit_3dcam'
   - '&revit_revisioncloud'
-  - RGB ON
+  - '&revit_symbol'
   - $$mdi:arrow-up-bold$$
   - '&revit_textbox'
   - '&revit_roomtag'
