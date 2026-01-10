@@ -172,7 +172,7 @@
             display-name = "LAYER0";
         };
 
-        layer_1 {
+        Revit_commands {
             bindings = <
 &kp ESCAPE      &kp F1                &kp F2              &kp F3             &kp F4                 &kp F5             &mmv MOVE_UP     &kp F6           &kp F7           &kp F8           &kp F9           &kp F10           &trans
 &kp DELETE      &revit_undo           &revit_placeswitch  &revit_placelight  &revit_placecomponent  &revit_spacetag    &mmv MOVE_DOWN   &kp PG_UP        &kp END          &rgb_ug RGB_TOG  &kp HOME         &kp MINUS         &kp EQUAL
