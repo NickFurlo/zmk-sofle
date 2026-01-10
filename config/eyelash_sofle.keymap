@@ -154,6 +154,13 @@
             bindings = <&kp C &kp A &kp M>;
             label = "REVIT_3DCAM";
         };
+
+        revit_symbol: revit_symbol {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp S &kp B>;
+            label = "REVIT_SYMBOL";
+        };
     };
 
     keymap {
@@ -177,7 +184,7 @@
 &kp ESCAPE      &kp F1                &kp F2              &kp F3             &kp F4                 &kp F5             &mmv MOVE_UP     &kp F6           &kp F7           &kp F8           &kp F9           &kp F10           &trans
 &kp DELETE      &revit_undo           &revit_placeswitch  &revit_placelight  &revit_placecomponent  &revit_spacetag    &mmv MOVE_DOWN   &kp PG_UP        &kp END          &rgb_ug RGB_TOG  &kp HOME         &kp MINUS         &kp EQUAL
 &revit_section  &revit_viewtemplate   &revit_line         &revit_move        &revit_copy            &revit_tag         &mmv MOVE_LEFT   &kp PG_DN        &rgb_ug RGB_ON   &rgb_ug RGB_OFF  &rgb_ug RGB_EFF  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&revit_3dcam    &revit_revisioncloud  &rgb_ug RGB_ON      &kp UP_ARROW       &revit_textbox         &revit_roomtag     &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp INSERT       &kp F11          &kp F12           &trans
+&revit_3dcam    &revit_revisioncloud  &revit_symbol       &kp UP_ARROW       &revit_textbox         &revit_roomtag     &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp INSERT       &kp F11          &kp F12           &trans
 &kp C_MUTE      &kp LEFT_ARROW        &kp DOWN_ARROW      &kp RIGHT          &trans                 &trans             &mkp LCLK        &trans           &trans           &trans           &trans           &trans
             >;
 
