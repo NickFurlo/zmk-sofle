@@ -126,6 +126,20 @@
             bindings = <&kp R &kp T>;
             label = "REVIT_ROOMTAG";
         };
+
+        revit_undo: revit_undo {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp U &kp D>;
+            label = "REVIT_UNDO";
+        };
+
+        revit_section: revit_section {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp S &kp N>;
+            label = "REVIT_SECTION";
+        };
     };
 
     keymap {
@@ -146,11 +160,11 @@
 
         layer_1 {
             bindings = <
-&kp GRAVE   &kp F1           &kp F2              &kp F3             &kp F4                 &kp F5             &mmv MOVE_UP     &kp F6           &kp F7           &kp F8      &kp F9     &kp F10           &trans
-&trans      &kp GRAVE        &revit_placeswitch  &revit_placelight  &revit_placecomponent  &revit_spacetag    &mmv MOVE_DOWN   &kp PG_UP        &kp END          &kp UP      &kp HOME   &kp MINUS         &kp EQUAL
-&trans      &kp TILDE        &revit_line         &revit_move        &revit_copy            &revit_roomtag     &mmv MOVE_LEFT   &kp PG_DN        &kp LEFT         &kp DOWN    &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&trans      &rgb_ug RGB_OFF  &rgb_ug RGB_ON      &rgb_ug RGB_EFF    &revit_textbox         &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp INSERT  &kp F11    &kp F12           &trans
-&kp C_MUTE  &trans           &trans              &trans             &trans                 &trans             &mkp LCLK        &trans           &trans           &trans      &trans     &trans
+&kp ESCAPE      &kp F1               &kp F2              &kp F3             &kp F4                 &kp F5             &mmv MOVE_UP     &kp F6           &kp F7           &kp F8      &kp F9     &kp F10           &trans
+&kp DELETE      &revit_undo          &revit_placeswitch  &revit_placelight  &revit_placecomponent  &revit_spacetag    &mmv MOVE_DOWN   &kp PG_UP        &kp END          &kp UP      &kp HOME   &kp MINUS         &kp EQUAL
+&revit_section  &revit_viewtemplate  &revit_line         &revit_move        &revit_copy            &revit_roomtag     &mmv MOVE_LEFT   &kp PG_DN        &kp LEFT         &kp DOWN    &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&trans          &rgb_ug RGB_OFF      &rgb_ug RGB_ON      &kp UP_ARROW       &revit_textbox         &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp INSERT  &kp F11    &kp F12           &trans
+&kp C_MUTE      &kp LEFT_ARROW       &kp DOWN_ARROW      &kp RIGHT          &trans                 &trans             &mkp LCLK        &trans           &trans           &trans      &trans     &trans
             >;
 
             display-name = "layer1";
