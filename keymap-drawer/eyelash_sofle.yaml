@@ -88,7 +88,7 @@ layers:
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - PG UP
   - END
-  - $$mdi:arrow-up-bold$$
+  - RGB TOG
   - HOME
   - {t: '-', s: _}
   - {t: '=', s: +}
@@ -102,7 +102,7 @@ layers:
   - PG DN
   - RGB ON
   - RGB OFF
-  - $$mdi:arrow-right-bold$$
+  - RGB EFF
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
   - '&revit_3dcam'
