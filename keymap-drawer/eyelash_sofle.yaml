@@ -97,7 +97,7 @@ layers:
   - '&revit_line'
   - '&revit_move'
   - '&revit_copy'
-  - '&revit_roomtag'
+  - '&revit_tag'
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - PG DN
   - RGB ON
@@ -110,7 +110,7 @@ layers:
   - RGB ON
   - $$mdi:arrow-up-bold$$
   - '&revit_textbox'
-  - RGB SPI
+  - '&revit_roomtag'
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - RGB BRI
   - RGB BRD
